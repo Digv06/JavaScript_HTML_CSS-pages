@@ -1,0 +1,38 @@
+:root{
+    --base: yellow;
+    --spacing: 20px;
+    --blur: 0;
+}
+
+img{
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
+
+.hl{
+    color: var(--base);
+}
+body{
+    text-align: center;
+    background: rgba(88, 74, 179, 0.589);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.controls{
+    margin-bottom: 50px;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+a{
+    color: var(--base);
+    text-decoration: none;
+}
+
+input{
+    width: 100px;
+}

@@ -1,0 +1,45 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    background-image: url("black.jpg");
+}
+.key{
+    transition:all 0.09s ;
+    color: lightseagreen;
+    font-style: italic;
+    border: 2px solid crimson;
+    border-radius: 3px;
+}
+.keys{
+    font-size: 20px ;
+    margin: 20% 0 0 400px;
+    border-radius: 5px;
+    border: 2px solid yellow ;
+    height: 50%;
+}
+.keys,.sound{
+    width: 50%;
+    text-align: center;
+    color: white;
+    padding: 12px;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sound{
+    color: blueviolet;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.playing{
+    transform: scale(1,1);
+    border-radius: 5px;
+    border-color: aqua;
+    box-shadow: 0 0 10px aqua;
+}
+
+kbd{
+    display: block;
+}

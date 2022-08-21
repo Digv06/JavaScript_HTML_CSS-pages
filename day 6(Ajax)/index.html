@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<body>
+    <script>
+        const endpoint = "https://github.com/nshntarora/Indian-Cities-JSON/blob/master/cities.json";
+
+        let cities = [];
+        fetch(endpoint)
+        .then(blob => blob.json())
+        .then(data => cities.push(...data))
+
+        function findMatches(words, cities ){
+            return cities.filter(place => {
+                const regex = new RegExp(words, 'gi');
+                return place.city.match(regex);
+
+
+            });
+        }
+
+    </script>
+</body>
+</html>
